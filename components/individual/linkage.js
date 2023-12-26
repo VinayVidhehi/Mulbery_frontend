@@ -9,10 +9,10 @@ const linkage = () => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     const response = await axios.get(
-      https://bat-project.onrender.com/values?option=${selectedOption}&value=${searchFor}`
+      `https://bat-project.onrender.com/values?option=${selectedOption}&value=${searchFor}`
     );
     const responseArray = response.data.results[0];
-    console.log("response is ", responseArray)
+    console.log("response is ", responseArray);
     setMessage(responseArray.first_name);
   };
 
