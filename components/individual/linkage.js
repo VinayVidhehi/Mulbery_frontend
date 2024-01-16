@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Select } from "antd";
 import axios from "axios";
-
 const linkage = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const [searchFor, setSearchFor] = useState("");
@@ -43,7 +42,7 @@ const linkage = () => {
                 defaultValue="id"
                 className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
               >
-                <option value="genotype">genotype</option>
+                <option value="gene">gene</option>
                 <option value="phenotype">phenotype</option>
                 <option value="id">id</option>
                 <option value="sl">sl</option>
@@ -69,21 +68,27 @@ const linkage = () => {
           </form>
           <br />
           {message && (
-            <div>
-              <h3 className="text-xl font-bold mb-2">Response:</h3>
-              {typeof message === "string" ? (
-                <p>{message}</p>
-              ) : (
-                <ul>
-                  {Object.entries(message).map(([key, value]) => (
-                    <li key={key}>
-                      <strong>{key}:</strong> {value}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          )}
+  <div className="response-container w-[900px]">
+    <h3 className="text-xl font-bold mb-2">Response:</h3>
+    {typeof message === "string" ? (
+      <p className="response-text">{message}</p>
+    ) : (
+      <ul className="response-list">
+        {Object.entries(message).map(([key, value]) => (
+          <li key={key} className="response-item">
+            <strong>{key}:</strong>
+            {typeof value === "string" && (
+              <span className="response-value" style={{ wordWrap: "break-word" }}>
+                {value}
+              </span>
+            )}
+            {typeof value !== "string" && <span className="response-value">{value}</span>}
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+)}
         </div>
       </div>
     </div>

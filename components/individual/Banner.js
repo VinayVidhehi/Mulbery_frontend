@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Navbar from "../shared/Navbar";
 import Introduction from "./Introduction";
+import "../../public/resized_image2.jpg"
 const Banner = () => {
   const [navbarBg, setNavbarBg] = useState("bg-transparent");
 
@@ -23,7 +24,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full flex flex-col justify-center items-center bg-cover bg-banner-img">
+    <div className="h-screen w-full flex flex-col justify-center items-center bg-cover top-50" style={{ backgroundImage: 'url(/resized_image2.jpg)' }}>
       <nav
         className={`fixed top-0 left-0 w-full ${navbarBg} transition duration-300 ease-in-out z-10`}
       >
