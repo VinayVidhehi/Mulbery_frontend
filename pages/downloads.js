@@ -30,7 +30,7 @@ const ExcelDownloadsPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-contact-us bg-cover bg-no-repeat bg-blend-darken">
+    <div className="min-h-screen bg-bg-image bg-cover bg-no-repeat bg-blend-darken">
       <nav
         className={`fixed top-0 left-0 w-full ${navbarBg} transition duration-300 ease-in-out z-10`}
       >
@@ -38,7 +38,7 @@ const ExcelDownloadsPage = () => {
           <div className="flex items-center justify-between py-4">
             <Link
               href="/"
-              className="text-white font-bold text-2xl cursor-pointer flex gap-2"
+              className="text-black font-bold text-2xl cursor-pointer flex gap-2"
             >
               <Image src="/logo.png" width={40} height={40} /> IMLM
             </Link>
@@ -49,7 +49,7 @@ const ExcelDownloadsPage = () => {
       <div className="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:py-16 lg:px-8 min-h-[90vh]">
         <h1 className="text-4xl font-bold my-8">Downloads</h1>
         <div className="grid grid-cols-2 gap-5 gap-y-10 sm:grid-cols-3 place-content-center items-center">
-          <div className=" border rounded-lg shadow-md">
+          <div className="border border-black border rounded-lg shadow-md">
             <div className="flex items-center justify-center h-32">
               <img className="min-h-full" src="excel.png" alt="Excel Icon" />
             </div>
@@ -66,7 +66,7 @@ const ExcelDownloadsPage = () => {
               Download
             </button>
           </div>
-          <div className="border rounded-lg shadow-md">
+          <div className="border border-black  border rounded-lg shadow-md">
             <div className="flex items-center justify-center h-32">
               <img className="min-h-full" src="excel.png" alt="Excel Icon" />
             </div>
@@ -78,7 +78,7 @@ const ExcelDownloadsPage = () => {
               Download
             </button>
           </div>
-          <div className=" border rounded-lg shadow-md">
+          <div className=" border border-black  border rounded-lg shadow-md">
             <div className="flex items-center justify-center h-32">
               <img className="min-h-full" src="excel.png" alt="Excel Icon" />
             </div>
@@ -90,7 +90,7 @@ const ExcelDownloadsPage = () => {
               Download
             </button>
           </div>
-          <div className="border rounded-lg shadow-md">
+          <div className="border border-black  border rounded-lg shadow-md">
             <div className="flex items-center justify-center h-32">
               <img className="min-h-full" src="excel.png" alt="Excel Icon" />
             </div>

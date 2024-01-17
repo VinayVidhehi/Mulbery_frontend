@@ -52,6 +52,18 @@ const speakers = [
     image: "/team/Spoorthi.jpg",
     description: "Research Intern",
   },
+  {
+    id:8,
+    name:"Aneesh Adiga S",
+    image:"/Aneesh.jpeg",
+    description: "Software Developer",
+  },
+  {
+    id:9,
+    name:"Vinay Kumar D",
+    image:"/Vinay.jpeg",
+    description: "Software Developer",
+  },
 ];
 
 const contentStyle = {

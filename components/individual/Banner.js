@@ -24,7 +24,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full flex flex-col justify-center items-center bg-cover top-50" style={{ backgroundImage: 'url(/resized_image2.jpg)' }}>
+    <div className="h-screen w-full flex flex-col justify-center items-center bg-cover top-50" style={{ backgroundImage: 'url(/beg-image.jpeg)' }}>
       <nav
         className={`fixed top-0 left-0 w-full ${navbarBg} transition duration-300 ease-in-out z-10`}
       >
@@ -32,7 +32,7 @@ const Banner = () => {
           <div className="flex items-center justify-between py-4">
             <Link
               href="/"
-              className="text-white font-bold text-2xl cursor-pointer flex gap-2"
+              className="text-black font-bold text-2xl cursor-pointer flex gap-2"
             >
               <Image src="/logo.png" width={40} height={40} /> IMLM
             </Link>
@@ -42,7 +42,7 @@ const Banner = () => {
         </div>
       </nav>
 
-      <div className="max-w-5xl w-full mx-auto px-4">
+      <div className="max-w-5xl w-full mx-auto px-4 mt-10">
         <h1 className="text-center font-bold mb-5 text-5xl">Indian Mulberry Linkage mapping Database</h1>
         <Introduction />
       </div>

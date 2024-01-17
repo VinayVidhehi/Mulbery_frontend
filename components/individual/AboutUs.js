@@ -11,7 +11,7 @@ const AboutUs = () => {
           About The Project
         </h2>
 
-        <p className="text-gray-700 leading-relaxed mb-8">
+        <p className="text-white-700 leading-relaxed mb-8">
           This project seeks to address the challenge of enhancing mulberry leaf
           production through a molecular breeding approach. The aim is to
           develop a genotyping array comprising of 25K Single Nucleotide

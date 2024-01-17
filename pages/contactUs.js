@@ -31,7 +31,7 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-contact-us bg-cover bg-no-repeat bg-blend-darken">
+    <div className="min-h-screen bg-bg-img bg-cover bg-no-repeat bg-blend-darken">
       <nav
         className={`fixed top-0 left-0 w-full ${navbarBg} transition duration-300 ease-in-out z-10`}
       >
@@ -39,7 +39,7 @@ const ContactPage = () => {
           <div className="flex items-center justify-between py-4">
             <Link
               href="/"
-              className="text-white font-bold text-2xl cursor-pointer flex gap-2"
+              className="text-black font-bold text-2xl cursor-pointer flex gap-2"
             >
               <Image src="/logo.png" width={40} height={40} /> IMLM
             </Link>
@@ -48,7 +48,8 @@ const ContactPage = () => {
         </div>
       </nav>
       <div className="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl mt-20">
+        <div className="border border-black rounded-md px-20 p-1 bg-gray-400">
+        <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-4xl mt-20">
           Contact Us
         </h2>
         <form className="mt-8" onSubmit={handleSubmit(onSubmit)}>
@@ -103,6 +104,7 @@ const ContactPage = () => {
                 )}
               </div>
             </div>
+            
             <div>
               <label
                 htmlFor="message"
@@ -208,6 +210,7 @@ const ContactPage = () => {
         </div>
       </div>
       <Footer />
+    </div>
     </div>
   );
 };

@@ -5,8 +5,8 @@ import navbar from "../shared/Navbar";
 
 const Introduction = () => {
   return (
-    <div className="bg-transparent border-2 max-w-5xl mx-auto px-4 border-white p-5">
-      <p className="text-white text-lg leading-relaxed mb-8">
+    <div className="bg-transparent border-2 max-w-5xl mx-auto px-4 border-black p-5">
+      <p className="text-black text-lg leading-relaxed mb-8">
         The flowering plant genus Morus belongs to the Moraceae family,
         sometimes referred to as the mulberry family. Morus indica is a member
         of this family. Morus indica, like other mulberries, is a deciduous
@@ -21,7 +21,7 @@ const Introduction = () => {
         resulted in the reduction of blood glucose levels in diabetic
         individuals through diverse pathways.
       </p>
-      <p className="text-white text-lg leading-relaxed hidden md:block">
+      <p className="text-black text-lg leading-relaxed hidden md:block">
         IMLM – Indian Mulberry Linkage mapping Database that is specific to
         Morus Indica: an Indian specific species. The Database focuses on Single
         nucleotide polymorphisms (SNPs) and Simple sequence repeats that are
