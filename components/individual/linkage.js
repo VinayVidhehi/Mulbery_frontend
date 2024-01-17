@@ -8,6 +8,7 @@ const linkage = () => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     try {
+      setMessage("loading please wait..,")
       const response = await axios.get(
         `https://bat-project.onrender.com/values?option=${selectedOption}&value=${searchFor}`
       );
@@ -43,10 +44,10 @@ const linkage = () => {
                 className="mt-1 block w-full pl-3 pr-10 py-2 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
               >
                 <option value="gene">gene</option>
-                <option value="phenotype">phenotype</option>
                 <option value="id">id</option>
                 <option value="sl">sl</option>
-                <option value="ssr_motif">ssr motif</option>
+                <option value="from1">from</option>
+                <option value="to1">to</option>
                 <option value="Molecular_Function">Molecular function</option>
                 <option value="Gene_ontology_IDs">Gene ontology IDs</option>
               </Select>
@@ -69,7 +70,7 @@ const linkage = () => {
           <br />
           {message && (
   <div className="response-container w-[900px]">
-    <h3 className="text-xl font-bold mb-2">Response:</h3>
+    <h3 className="text-xl font-bold mb-2">Results:</h3>
     {typeof message === "string" ? (
       <p className="response-text">{message}</p>
     ) : (
