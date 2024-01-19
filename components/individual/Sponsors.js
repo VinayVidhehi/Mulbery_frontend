@@ -61,7 +61,7 @@ const speakers = [
   {
     id:9,
     name:"Vinay Kumar D",
-    image:"/Vinay.jpeg",
+    image:"/gray.jpg",
     description: "Software Developer",
   },
 ];
